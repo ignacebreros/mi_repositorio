@@ -1,0 +1,261 @@
+@font-face {
+  font-family:"juli" ;
+  src: url("../font/juli.ttf");
+}
+
+*{margin:0;
+padding: 0;
+box-sizing:border-box;}
+
+
+nav{
+    background-color:#6E2EC9; 
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding-top:20px;
+    padding-left:5%;
+    padding-right:5%;
+    width:100%;
+    grid-area:nav;
+  }
+   
+ul
+  {
+    color: rgb(240, 248, 255);font-family: "juli";font:20px; list-style-type:none; text-decoration: none; 
+  }
+ 
+  
+  
+  
+ ol { list-style: none;}
+
+footer {background-color: #8045FE;
+width:1850px;
+grid-area:footer;
+}
+
+
+
+    
+ol li {display:inline-block;
+       padding-inline-start:30px;
+       color: aliceblue;
+      
+       
+      }  
+.textos1
+{ text-align: center;
+  font-family:"juli";
+  color: aliceblue;
+  font-size:xx-large;
+  background-color:turquoise;
+  border-color: white ;
+  padding: 9rem ;
+  grid-area: titulo ;
+ 
+ 
+}
+      
+.imagentaza 
+  {text-align: center;
+   background-color: #2342ca;
+   border: 5px;
+   border-color: aliceblue;
+   padding: 13rem;
+   grid-area: imagen;
+    
+          
+} 
+.barra {
+  font-family:"juli"; 
+  color:rgb(226, 174, 228);
+  font-size: medium;
+  text-decoration: none;
+}
+         
+
+
+
+.precios {background-color: aqua;
+        text-align: right;}
+
+.titulo2 {font-size: large;}
+.contac { 
+        font-family:"juli";
+        font-size: large;
+        font-weight: bold;
+       }
+.contenedor{
+  display:grid;
+  gap:10px;
+  justify-content: space-between;
+  align-items:center center;
+  grid-template-areas: 
+  "imagen titulo"
+  "imagen descripcion"
+  ;
+}
+.cuerponostros{ 
+  background-color: aliceblue;
+  width:1850px
+}
+.foote{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom:  20px;
+  padding-left:20px ;
+  padding-right: 20px; 
+ }
+ .coope{ font-family:"juli";
+font-size:x-large;
+color:white;
+}
+a{text-decoration: none;
+color: aliceblue;
+}
+.descripcion{ background-color: #77E68A;
+font-family: "juli";
+color: aliceblue;
+font-size:x-large;
+grid-area:descripcion;
+padding-top:2rem;
+
+  padding-bottom: 3rem;
+  padding-left:4rem ;
+  padding-right: 5rem;
+}
+
+
+.productoremera{
+  background-color: #77E68A;
+color: aliceblue;
+font-family: "juli";
+font-size: xx-large;
+grid-area: remera;
+}
+.productotaza{
+  background-color: darkturquoise;
+  color: aliceblue;
+  font-family: "juli";
+  font-size: xx-large;
+  grid-area: taza;
+}
+.productollavero{
+  background-color: deeppink;
+  color: aliceblue;
+  font-family: "juli";
+  font-size: xx-large;
+  grid-area: llavero;
+}
+.botones{
+  background-color: deepskyblue;
+  color: aliceblue;
+  font-family: "juli";
+  font-size: xx-large;
+  grid-area:boton;
+}
+
+.productoss{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows:1fr 1fr ;
+ 
+  grid-template-areas: 
+  "remera taza"
+  "boton llavero"
+ }
+
+p{
+  text-align: center ;
+  padding-bottom:3rem ;
+}
+.remera{
+  text-align: center;
+}
+.taza{
+  text-align: center;
+  
+}
+.llavero{
+  text-align: center;
+}
+.boton{
+  text-align: center;
+}
+.imagen1{
+  padding-left:17rem;
+}
+.imagen2{
+  padding-left:17rem;
+  padding-top:2rem ;
+}
+.imagen3{
+  padding-left:17rem;
+  padding-top:2rem ;
+}
+
+.imagen4{
+  padding-left:17rem;
+  padding-top:2rem ;}
+  @media (width < 600px) 
+  {
+   .contenedor {
+     grid-template-columns:1fr;
+     grid-template-rows: 1fr 1fr 2fr;
+     grid-template-areas:
+     "imagen"
+     "titulo"
+     "descripcion"
+   }
+   .barra{
+     display: inline;
+    justify-content:left;
+    padding-top:0px;
+    padding-left:0%;
+    padding-right:0%;
+    width:100%;
+   } 
+   .foote{
+     display: block;
+     align-items: center;
+   }
+   .descripcion{
+     font-size: xx-large;
+     text-align: center;
+     justify-content: center;
+     width: 1080px;
+     padding-left:13rem ;
+     padding-bottom:13rem ;
+     padding-top:13rem;
+     padding-right:13rem;
+     
+ 
+   }
+   .imagentaza{
+     padding-left:0rem;
+     padding-right:1rem;
+     justify-content: left;
+     }
+     
+   
+     
+     
+ } 
+ @media (width < 600px){.productoss {
+  grid-template-columns:1fr 1fr 1fr 1fr ;
+  grid-template-rows:1fr;
+  grid-template-areas: 
+  "remera" 
+  "taza"
+  "boton" 
+  "llavero"}
+
+ }
+ 
+ 
+ 
+  
